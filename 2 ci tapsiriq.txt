@@ -1,0 +1,25 @@
+let mixed=["Azad",93,true,"Iyirmi",780,90,3.4,7.8,45,false];
+
+1) massivdeki tek ededleri tapin
+
+for(let i of mixed){if(typeof i=="number" && i%2){console.log(i)}}
+
+2) massivdeki cut ededleri tapin
+
+for(let i of mixed){if(typeof i=="number" && i%2==0){console.log(i)}}
+
+3) massivdeki ededlerin cemini tapin
+
+let sum=0; for(let i of mixed){if(typeof i=="number"){sum=sum+i; console.log(sum);}}
+
+4)massivde yalniz ededleri gosterin
+
+for(let i of mixed){if (typeof i=="number"){console.log(i);}}
+
+5) massivdeki ededleri tersine duzun
+
+for(let i=mixed.length-1; i>=0; i--){if(typeof mixed[i]=="number"){console.log(mixed[i]);}}
+
+6) massivde string informasiyalarin uzunlugunu gosterin
+
+for(let i of mixed){if(typeof i=="string"){console.log(i.length);}}
